@@ -65,7 +65,7 @@ i {
 .precos-riscados {
     display: flex;
     align-items: center;
-    margin-top: 1.5em;
+    margin-top: 1em;
     gap: 1.3em;
 }
 .paragrafo-button {
@@ -82,7 +82,7 @@ i {
     cursor: pointer;
 }
 .valor {
-    margin: 1.5em 0;
+    margin: 1em 0;
 }
 .valores {
     margin-left: 2em;
@@ -115,10 +115,10 @@ i {
 }
 .valor-button-carrinho {
     padding: .8em;
-    color: rgb(0, 0, 0);
+    color: rgb(41, 41, 41);
     font-weight: bold;
     border-radius: 15px;
-    background-color: #0dbe7a;
+    background-color: #03db88;
     width: 100%;
     border: none;
     transition: .4s;
@@ -136,7 +136,7 @@ i {
     margin-left: 2em;
 }
 .opcoes-de-pagamento {
-    margin: 1.6em 2em;
+    margin: 1em 2em;
     display: flex;
     align-items: center;
 }
@@ -155,12 +155,175 @@ i {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    margin: 0 25.6em;
-    list-style: none;
+    margin: auto;
 }
 .detalhes-produto {
-    border: solid 1px #000000;
+    text-align: justify;
+    margin: 0.4em 0;
 }
+.titulo-geral-detalhe {
+    text-align: center;
+    margin: 1.2em 0;
+}
+.detalhe {
+    color: #000;
+}
+.nome-do-iphone {
+    color: rgb(92, 92, 90);
+    margin: 0.5em 0 1em 0;
+}
+table {
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    border: 0.2px solid #000;
+    border-collapse: collapse;
+}
+.mudar-cor {
+    background-color: rgb(199, 199, 192);
+}
+td {
+    padding: 0.8em 1em 0.8em 1em;
+    text-align: justify;
+}
+
+/* Estilização comentarios  */
+
+.container-comentarios {
+    width: 60%;
+    margin: auto;
+}
+
+#comentarioTexto {
+    width: 100%;
+    height: 70px;
+    margin: 10px 0;
+    padding: 3.2em;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.botoes {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+}
+
+button {
+    padding: 0.5em 1em;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #b2b3b3;
+}
+
+#confirmarComentarioBtn {
+    background-color: #1174e6;
+    color: white;
+    border: none;
+}
+
+#cancelarComentarioBtn {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+}
+
+.comentarios {
+    margin-top: 2em;
+    text-align: left;
+}
+
+.comentario {
+    padding: 1em;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 1em;
+}
+
+.campo-comentario {
+    margin: 2em 0 1em 0;
+}
+
+/* Estilização avaliação estrelas */
+
+.avaliacao-container {
+    text-align: left;
+    margin: 2.5em 0;
+}
+
+.estrelas-primeira {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: start;
+    margin-top: 0.6em;
+}
+.estrelas {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: start;
+    margin-top: 0.6em;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+label {
+    font-size: 25px;
+    color: #ccc;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+/* Cor para as estrelas selecionadas */
+input[type="radio"]:checked ~ label {
+    color: gold;
+}
+
+/* Cor ao passar o mouse sobre as estrelas */
+
+.avaliacao-geral {
+    margin: 1.5em 23.7em;
+}
+.avaliacao {
+   color: rgb(92, 92, 90);
+} 
+.avaliacao-p {
+    margin: 0.6em 0 3em 0;
+}
+.avaliacao-container {
+    display: none; /* Inicialmente oculto */
+}
+
+.estrelas-comentario span {
+    color: gold; /* Define a cor das estrelas como dourado */
+    font-size: 1.2em; /* Ajusta o tamanho das estrelas, se necessário */
+}
+
+.container-conteudo-importante {
+    margin-top: 10px;
+}
+
+.container-conteudo-importante h3 {
+    margin-bottom: 5px;
+}
+
+#conteudoImportante {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: none; /* Para não permitir redimensionar */
+    font-size: 1rem;
+}
+
+.button-comentarios {
+    border-radius: 20px;
+    background-color: #fff;
+    padding: 0.5em 3.8em;
+}
+
 
 @media screen and (max-width: 871px ) {
     .title {
@@ -186,5 +349,27 @@ i {
     }
     .textos {
         border: none;
+    }
+    .title-detalhe-produto {
+        margin: 2em 1em 1em 1em;
+        text-align: center;
+
+    }
+    .valor-button-carrinho {
+        margin-top: 1em;
+    }
+    .avaliacao-geral {
+        margin: auto;
+    }
+    .avaliacao {
+        margin-top: 1em;
+        text-align: center;
+    }
+    .avaliacao-p {
+        text-align: center;
+    }
+    .button-avaliacao{
+        display: flex;
+        justify-content: center;
     }
 }
